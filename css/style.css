@@ -502,6 +502,7 @@ line-height: normal;
     border-radius: 20px;
 padding: 40px 40px;
 gap: 30px;
+     height: 165px;
  } 
  .details_title{
     color: var(--color-blue);
