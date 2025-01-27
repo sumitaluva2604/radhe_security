@@ -301,6 +301,13 @@ background-position: left;
 background-repeat: no-repeat;
 
 }
+.banner_hed{
+    background: url(../img/banner_had.svg),
+    linear-gradient(248deg, #CC2127 -2.62%, #23295F 99.31%);
+background-size: contain;
+background-position: left;
+background-repeat: no-repeat;
+}
 .banner_1 img{
     position: absolute;
     right: 0px;
@@ -491,4 +498,60 @@ line-height: normal;
     padding: 35px 40px;
     top: 26%;
   }
-  
+ .about_integrity_card .service_card{
+    border-radius: 20px;
+padding: 40px 40px;
+gap: 30;
+ } 
+ .details_title{
+    color: var(--color-blue);
+font-size: 30px;
+font-weight: 700;
+margin-bottom: 30px;
+ }
+ .details_card_subtitle{
+    color: var(--black);
+font-size: 22px;
+font-weight: 600;
+ }
+.details_card_text{
+    display: flex;
+}
+.details_card_body{
+    padding: 20px 45px;
+
+}
+.details_card_hed{
+    padding: 20px 45px;
+    border-bottom: 1px solid #CDCDCD;
+}
+.details_card {
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+border-radius: 20px;
+background: #FFF;
+box-shadow: 2px 4px 75.8px 0px rgba(0, 0, 0, 0.10);
+}
+.details_card_text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+.ft_size_16{
+font-size: 16px;
+}
+.about_service {
+    border-radius: 20px;
+    background: #FAE9E9;
+    padding: 45px 45px;
+    text-align: center;
+}
+.about_service_title{
+    color: var(--color-red);
+text-align: center;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
