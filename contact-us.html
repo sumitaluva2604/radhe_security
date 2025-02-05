@@ -118,49 +118,43 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 ">
+                <div class="col-md-6">
                     <div class="contact_card">
-                     <form class="row g-3" action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
-    <div class="col-md-12">
-        <h3 class="form_title">Send Message</h3>
-        <p>For more information, fill out the form below, and our team will get back to you shortly.</p>
-    </div>
-
-    <div class="col-md-12">
-        <label for="inputname" class="form-label">Full Name</label>
-        <input type="text" name="Full Name" class="form-control" id="inputname" required>
-    </div>
-    <div class="col-md-12">
-        <label for="inputcomname" class="form-label">Company Name</label>
-        <input type="text" name="Company Name" class="form-control" id="inputcomname" required>
-    </div>
-    <div class="col-12">
-        <label for="inputService" class="form-label">Service</label>
-        <input type="text" name="Service" class="form-control" id="inputService" required>
-    </div>
-    <div class="col-md-12">
-        <label for="inputEmail4" class="form-label">Email</label>
-        <input type="email" name="Email" class="form-control" id="inputEmail4" required>
-    </div>
-    <div class="col-md-12">
-        <label for="inputinsights" class="form-label">Insights</label>
-        <textarea class="form-control" name="Insights" id="inputinsights" rows="3"></textarea>
-    </div>
-
-    <!-- Hidden fields for better email delivery -->
-    <input type="hidden" name="_subject" value="New Contact Form Submission">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_cc" value="yourbackupemail@example.com"> <!-- Optional: CC another email -->
-    <input type="hidden" name="_autoresponse" value="Thank you for reaching out! We will contact you soon.">
-
-    <div class="col-12">
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
-</form>
-
+                        <form class="row g-3" action="sendmail.php" method="POST">
+                            <div class="col-md-12">
+                                <h3 class="form_title">Send Message</h3>
+                                <p>For more information, fill out the form below, and our team will get back to you shortly.</p>
+                            </div>
+                
+                            <div class="col-md-12">
+                                <label for="inputname" class="form-label">Full Name</label>
+                                <input type="text" name="full_name" class="form-control" id="inputname" required>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="inputcomname" class="form-label">Company Name</label>
+                                <input type="text" name="company_name" class="form-control" id="inputcomname" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress2" class="form-label">Service</label>
+                                <input type="text" name="service" class="form-control" id="inputAddress2" required>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="inputEmail4" class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control" id="inputEmail4" required>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="inputinsights" class="form-label">Insights</label>
+                                <textarea class="form-control" name="insights" id="inputinsights" rows="3"></textarea>
+                            </div>
+                
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
                     </div>
-                   <p>At radhe security , we believe in building trust through unwavering commitment to safety. as a government-approved and licensed security firm, we are proud to serve diverse sectors including industrial, residential, commercial, educational, hospitality, healthcare, and events.</p>
+                    <p>At Radhe Security, we believe in building trust through unwavering commitment to safety. As a government-approved and licensed security firm, we are proud to serve diverse sectors including industrial, residential, commercial, educational, hospitality, healthcare, and events.</p>
                 </div>
+                
               </div>
            </div>
         </section>
