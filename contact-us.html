@@ -120,7 +120,7 @@
                 </div>
                 <div class="col-md-6 ">
                     <div class="contact_card">
-                     <form class="row g-3" action="https://formsubmit.co/79ce4371f4d3d039a5c6cfe16610114c" method="POST">
+                     <form class="row g-3" action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
     <div class="col-md-12">
         <h3 class="form_title">Send Message</h3>
         <p>For more information, fill out the form below, and our team will get back to you shortly.</p>
@@ -135,22 +135,23 @@
         <input type="text" name="Company Name" class="form-control" id="inputcomname" required>
     </div>
     <div class="col-12">
-        <label for="inputAddress2" class="form-label">Service</label>
-        <input type="text" name="Service" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" required>
+        <label for="inputService" class="form-label">Service</label>
+        <input type="text" name="Service" class="form-control" id="inputService" required>
     </div>
     <div class="col-md-12">
         <label for="inputEmail4" class="form-label">Email</label>
         <input type="email" name="Email" class="form-control" id="inputEmail4" required>
     </div>
-
     <div class="col-md-12">
         <label for="inputinsights" class="form-label">Insights</label>
         <textarea class="form-control" name="Insights" id="inputinsights" rows="3"></textarea>
     </div>
 
     <!-- Hidden fields for better email delivery -->
-    <input type="hidden" name="_subject" value="New Form Submission">
+    <input type="hidden" name="_subject" value="New Contact Form Submission">
     <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_cc" value="yourbackupemail@example.com"> <!-- Optional: CC another email -->
+    <input type="hidden" name="_autoresponse" value="Thank you for reaching out! We will contact you soon.">
 
     <div class="col-12">
         <button type="submit" class="btn btn-primary">Submit</button>
