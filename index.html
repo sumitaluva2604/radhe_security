@@ -35,52 +35,85 @@
     <div class="main">
         <header class="header sticky-navbar">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light ">
+                <nav class="navbar navbar-expand-lg navbar-light">
                     <!-- Logo -->
                     <a class="navbar-brand" href="index.html">
                         <img src="img/radhe_Security_logo.svg" alt="radhe_Security" width="100">
                     </a>
-
-                    <!-- Toggler for mobile view -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        
+                    <!-- Toggler for Mobile View -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavbar"
+                        aria-controls="mobileNavbar" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
-                    <!-- Navbar links -->
-                    <div class="collapse navbar-collapse" id="navbarNav">
+        
+                    <!-- Desktop Navbar (Visible on Large Screens) -->
+                    <div class="collapse navbar-collapse d-none d-lg-block" id="desktopNavbar">
                         <ul class="navbar-nav me-auto ms-0 ms-md-5">
                             <li class="nav-item">
                                 <a class="nav-link active" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Security Service</a>
+                                <a class="nav-link" href="services.html">Security Service</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Food Service</a>
+                                <a class="nav-link" href="food-service.html">Food Service</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Cleaning Service</a>
+                                <a class="nav-link" href="cleaning-service.html">Cleaning Service</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="aboutus.html">About Us</a>
                             </li>
                         </ul>
-                        <!-- Optional Right-Side Button -->
+                        <!-- Right-Side Button -->
                         <div class="d-lg-flex align-items-center ms-lg-3">
-                            <a href="contact.html" class="btn get_btn">Get in touch <span><i
-                                        class="fa-solid fa-arrow-right"></i></span></a>
+                            <a href="contact-us.html" class="btn get_btn">Get in touch <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+        
+                    <!-- Offcanvas Menu (Visible Only on Mobile) -->
+                    <div class="offcanvas offcanvas-end d-lg-none" id="mobileNavbar">
+                        <div class="offcanvas-header">
+                            <!-- <a class="navbar-brand" href="index.html">
+                                <img src="img/radhe_Security_logo.svg" alt="radhe_Security" width="100">
+                            </a> -->
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services.html">Security Service</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="food-service.html">Food Service</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cleaning-service.html">Cleaning Service</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="aboutus.html">About Us</a>
+                                </li>
+                            </ul>
+                            <!-- Mobile Contact Button -->
+                            <div class="mt-3">
+                                <a href="contact-us.html" class="btn get_btn w-100">Get in touch</a>
+                            </div>
                         </div>
                     </div>
                 </nav>
             </div>
         </header>
+        
         <section class="section_pt section_pb banner_wrapper">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7 position-relative">
                         <h1 class="banner_title mb-4">
-                            Your Trusted Partner for Comprehensive Security Solutions Across Gujarat
+                            Your Trusted Partner for <span class="typewrite" data-period="2000" data-type="[ &quot; Comprehensive Security Solutions Across Gujarat&quot; ]"></span> 
                         </h1>
                         <p class="text-white mb-5">
                             Your trusted partner for comprehensive security solutions across gujarat securing lives,
@@ -96,7 +129,7 @@
                         </div>
                     </div>
                     <div class="col-md-5">
-                        <div class="d-flex justify-content-center">
+                        <div class="d-flex justify-content-center mt-5 mt-md-0">
                             <img src="./img/banner.png" alt="banner" class="img-fluid">
                         </div>
                     </div>
@@ -110,7 +143,7 @@
                     <div class="col-md-4">
                         <div class="d-flex integrity_card">
                             <div class="">
-                                <img src="./img/integrity.svg" alt="">
+                                <img src="./img/integrity.svg" alt="" class="img-fluid">
                             </div>
                             <div>
                                 <h3>integrity</h3>
@@ -122,7 +155,7 @@
                     <div class="col-md-4">
                         <div class="d-flex integrity_card">
                             <div class="">
-                                <img src="./img/professionalism.svg" alt="">
+                                <img src="./img/professionalism.svg" class="img-fluid" alt="">
                             </div>
                             <div>
                                 <h3>Professionalism</h3>
@@ -134,7 +167,7 @@
                     <div class="col-md-4">
                         <div class="d-flex integrity_card">
                             <div class="">
-                                <img src="./img/accountability.svg" alt="">
+                                <img src="./img/accountability.svg" class="img-fluid" alt="">
                             </div>
                             <div>
                                 <h3>Accountability</h3>
@@ -148,8 +181,11 @@
         <section class="section_pt section_pb">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 d-flex justify-content-center">
-                        <img src="img/aboutus.png" alt="aboutus">
+                    <div class="col-md-6">
+                        <div class=" d-flex justify-content-center">
+                            <img src="img/aboutus.png" alt="aboutus" class="about_img img-fluid">
+
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <h2 class="service_title">
@@ -157,7 +193,7 @@
                         </h2>
                         <p>Radhe Security is a trusted provider of comprehensive service solutions, specializing in Private Security Services, Cleaning Services, and Catering Services. With a commitment to excellence, our private security services ensure safety and peace of mind for individuals and businesses.</p>
                         <p>Our professional cleaning services deliver spotless environments tailored to your needs. In addition, our catering services offer exceptional culinary experiences for all occasions. At Radhe Security, we prioritize quality, reliability, and customer satisfaction in every service we deliver.</p>
-                        <a href="#" class="btn get_btn red_btn">Get in touch <span><i
+                        <a href="aboutus.html" class="btn get_btn red_btn">Get in touch <span><i
                             class="fa-solid fa-arrow-right"></i></span></a>
                             <div id="counter" class="counter position-relative">
 
@@ -231,7 +267,7 @@
         <section class="section_pt light_red">
             <div class="container">
                 <div class="row justify-content-center">
-                    <h3 class="sub_common_head col-md-1">Services</h3>
+                    <h3 class="sub_common_head col-md-1 col-4">Services</h3>
                 </div>
                 <div class="row justify-content-center mb-5">
                     <h2 class="common_head col-md-6">We Provide <span class="red_text">Solutions</span> That Can Make You Happy</h2>
@@ -277,11 +313,11 @@
                         </div>
                        </div>
                        </div>
-                       <a href="#" class="btn get_btn red_btn">Learn More <span><i
+                       <a href="services.html" class="btn get_btn red_btn">Learn More <span><i
                         class="fa-solid fa-arrow-right"></i></span></a>
                    </div>
                     <div class="col-md-6 d-flex justify-content-center">
-                       <img src="img/privateservices.png" alt="privateservices" class="img-fluid">
+                       <img src="img/privateservices.png" alt="privateservices" class="img-fluid mt-5 mt-md-0">
                     </div>
                 </div>
             </div>
@@ -298,44 +334,60 @@
             </div>
             <div class="owl-carousel blog_slider owl-theme">
                 <div class="offering_services_card">
-                    <img src="img/industrialsecurity.png" alt="Industrial Security " class="img-fluid">
+                    <img src="img/services/industrial.jpg" alt="Industrial Security " class="img-fluid">
                     <div class="offering_card_title">Industrial Security Overview</div>
                     <p>
-                        At Radhe Security, we believe in building trust through unwavering commitment to safety.
+                        industrial facilities face unique threats that demand specialized security services...
                     </p>
-                    <a href="#" class="btn get_btn read_more_btn">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                    <a href="services.html#industrialsecurity" class="btn get_btn read_more_btn">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
                 </div>
                 <div class="offering_services_card">
-                    <img src="img/industrialsecurity.png" alt="Industrial Security " class="img-fluid">
-                    <div class="offering_card_title">Industrial Security Overview</div>
+                    <img src="img/services/residential.jpg" alt="Residential Security " class="img-fluid">
+                    <div class="offering_card_title">Residential Security </div>
                     <p>
-                        At Radhe Security, we believe in building trust through unwavering commitment to safety.
-                    </p>
-                    <a href="#" class="btn get_btn read_more_btn">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                        industrial facilities face unique threats that demand specialized security services...
+                                        </p>
+                    <a href="services.html#residentialsecurity" class="btn get_btn read_more_btn">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
                 </div>
                 <div class="offering_services_card">
-                    <img src="img/industrialsecurity.png" alt="Industrial Security " class="img-fluid">
-                    <div class="offering_card_title">Industrial Security Overview</div>
+                    <img src="img/services/commercial.jpg" alt="Commercial Security " class="img-fluid">
+                    <div class="offering_card_title">Commercial Security</div>
                     <p>
-                        At Radhe Security, we believe in building trust through unwavering commitment to safety.
+                        Businesses thrive in secure environments.our commercial security solutions include
                     </p>
-                    <a href="#" class="btn get_btn read_more_btn">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                    <a href="services.html#commercialsecurity" class="btn get_btn read_more_btn">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
                 </div>
                 <div class="offering_services_card">
-                    <img src="img/industrialsecurity.png" alt="Industrial Security " class="img-fluid">
-                    <div class="offering_card_title">Industrial Security Overview</div>
+                    <img src="img/services/restaurant.jpg" alt="Hotel and Restaurant Security " class="img-fluid">
+                    <div class="offering_card_title">Hotel and Restaurant Security</div>
                     <p>
-                        At Radhe Security, we believe in building trust through unwavering commitment to safety.
+                        The hospitality sector demands a fine balance between welcoming guests and maintaining...
                     </p>
-                    <a href="#" class="btn get_btn read_more_btn">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                    <a href="services.html#restaurantsecurity" class="btn get_btn read_more_btn">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
                 </div>
                 <div class="offering_services_card">
-                    <img src="img/industrialsecurity.png" alt="Industrial Security " class="img-fluid">
-                    <div class="offering_card_title">Industrial Security Overview</div>
+                    <img src="img/services/school.jpg" alt="School and College Security " class="img-fluid">
+                    <div class="offering_card_title">School and College Security</div>
                     <p>
-                        At Radhe Security, we believe in building trust through unwavering commitment to safety.
+                        Educational institutions require specialized protection to create a safe learning...
                     </p>
-                    <a href="#" class="btn get_btn read_more_btn">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                    <a href="services.html#collegesecurity" class="btn get_btn read_more_btn">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                </div>
+                <div class="offering_services_card">
+                    <img src="img/services/event.jpg" alt="Event Security" class="img-fluid">
+                    <div class="offering_card_title">Event Security</div>
+                    <p>
+                        From small gatherings to large-scale events, radhe security ensures safety and smooth...
+                    </p>
+                    <a href="services.html#Eventsecurity" class="btn get_btn read_more_btn">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                </div>
+                <div class="offering_services_card">
+                    <img src="img/services/hospital.jpg" alt="Hospital & Healthcare Security" class="img-fluid">
+                    <div class="offering_card_title">Hospital & Healthcare Security</div>
+                    <p>
+                        Healthcare facilities require a calm and controlled environment to operate ...
+                    </p>
+                    <a href="services.html#hospitalsecurity" class="btn get_btn read_more_btn">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
                 </div>
             </div>
             
@@ -359,17 +411,36 @@
                                <div class="row g-4 mb-5 mt-3">
                                <div class="col-md-6">
                                 <div class="service_card ">
-                                    <img src="img/Expert_Team.svg" alt="Best Service
-                                    Standard">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32" fill="none">
+                                        <path d="M9.48098 20.7975C7.76098 22.1475 6.65098 24.2475 6.65098 26.6075V28.8275H2.22098C0.990976 28.8275 0.000976562 27.8375 0.000976562 26.6075V25.1275C0.000976562 22.2675 2.31098 19.9575 5.17098 19.9575H6.65098C7.70098 19.9575 8.67098 20.2675 9.48098 20.7975Z" fill="#0A9100"/>
+                                        <path d="M23.6408 19.9471C25.4744 19.9471 26.9608 18.4607 26.9608 16.6271C26.9608 14.7935 25.4744 13.3071 23.6408 13.3071C21.8072 13.3071 20.3208 14.7935 20.3208 16.6271C20.3208 18.4607 21.8072 19.9471 23.6408 19.9471Z" fill="#0A9100"/>
+                                        <path d="M5.91082 19.9471C7.74441 19.9471 9.23082 18.4607 9.23082 16.6271C9.23082 14.7935 7.74441 13.3071 5.91082 13.3071C4.07723 13.3071 2.59082 14.7935 2.59082 16.6271C2.59082 18.4607 4.07723 19.9471 5.91082 19.9471Z" fill="#0A9100"/>
+                                        <path d="M29.5508 25.1275V26.6075C29.5508 27.8375 28.5608 28.8275 27.3308 28.8275H22.9008V26.6075C22.9008 24.2475 21.7908 22.1475 20.0708 20.7975C20.8808 20.2675 21.8508 19.9575 22.9008 19.9575H24.3808C27.2408 19.9575 29.5508 22.2675 29.5508 25.1275Z" fill="#0A9100"/>
+                                        <path d="M14.7709 20.6874C17.0132 20.6874 18.8309 18.8697 18.8309 16.6274C18.8309 14.3851 17.0132 12.5674 14.7709 12.5674C12.5287 12.5674 10.7109 14.3851 10.7109 16.6274C10.7109 18.8697 12.5287 20.6874 14.7709 20.6874Z" fill="#0A9100"/>
+                                        <path d="M15.5111 20.6973H14.0311C10.7711 20.6973 8.12109 23.3473 8.12109 26.6073V28.8273C8.12109 30.0473 9.11109 31.0473 10.3411 31.0473H19.2111C20.4311 31.0473 21.4311 30.0573 21.4311 28.8273V26.6073C21.4311 23.3473 18.7811 20.6973 15.5211 20.6973H15.5111Z" fill="#0A9100"/>
+                                        <path d="M25.4908 10.1176L23.7108 10.7476C23.2008 10.9276 22.6808 10.5476 22.6908 10.0076L22.7408 8.11756L21.5908 6.61756C21.2608 6.18756 21.4608 5.56756 21.9808 5.41756L23.8008 4.88756L24.8708 3.32756C25.1708 2.88756 25.8308 2.88756 26.1308 3.32756L27.2008 4.88756L29.0208 5.41756C29.5308 5.56756 29.7408 6.18756 29.4108 6.61756L28.2608 8.11756L28.3108 10.0076C28.3208 10.5476 27.8008 10.9276 27.2908 10.7476L25.5108 10.1176H25.4908Z" fill="#0A9100"/>
+                                        <path d="M4.06111 10.1176L2.28111 10.7476C1.77111 10.9276 1.25111 10.5476 1.26111 10.0076L1.31111 8.11756L0.161111 6.61756C-0.168889 6.18756 0.0311107 5.56756 0.551111 5.41756L2.37111 4.88756L3.44111 3.32756C3.74111 2.88756 4.40111 2.88756 4.70111 3.32756L5.77111 4.88756L7.59111 5.41756C8.10111 5.56756 8.31111 6.18756 7.98111 6.61756L6.83111 8.11756L6.88111 10.0076C6.89111 10.5476 6.37111 10.9276 5.86111 10.7476L4.08111 10.1176H4.06111Z" fill="#0A9100"/>
+                                        <path d="M14.7708 8.4475L12.6608 9.1975C12.0608 9.4075 11.4308 8.9575 11.4508 8.3175L11.5108 6.0775L10.1408 4.2975C9.7508 3.7975 9.9908 3.0575 10.6008 2.8775L12.7508 2.2475L14.0208 0.3975C14.3808 -0.1325 15.1508 -0.1325 15.5108 0.3975L16.7808 2.2475L18.9308 2.8775C19.5408 3.0575 19.7808 3.7975 19.3908 4.2975L18.0208 6.0775L18.0808 8.3175C18.1008 8.9575 17.4708 9.4075 16.8708 9.1975L14.7608 8.4475H14.7708Z" fill="#0A9100"/>
+                                      </svg>
                                     <P class="mb-0">Best Service
                                         Standard</P>
                                 </div>
                                </div>
                                <div class="col-md-6">
                                 <div class="service_card ">
-                                    <img src="img/Affordable_Pricing.svg" alt="High Level
-                                    Of Business
-                                    Ethics">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                        <g clip-path="url(#clip0_56_374)">
+                                          <path d="M29.8798 24.9969L26.7541 19.5869C25.0617 22.2041 22.5463 24.1831 19.6055 25.2096L22.0839 29.5006C22.2596 29.815 22.5925 30 22.9532 30C23.3046 30 23.6375 29.8058 23.8132 29.5006L25.5518 26.5043H29.0105C29.3712 26.5043 29.7041 26.3193 29.8798 26.0049C30.0555 25.6997 30.0555 25.3113 29.8798 25.0062V24.9969Z" fill="#0A9100"/>
+                                          <path d="M3.26448 19.5869L0.129462 24.9969C-0.0462466 25.3021 -0.0462466 25.6905 0.129462 25.9956C0.305171 26.3101 0.638094 26.495 0.99876 26.495H4.45745L6.19605 29.4913C6.37176 29.7965 6.70468 29.9907 7.0561 29.9907C7.41676 29.9907 7.74968 29.8057 7.92539 29.4913L10.4038 25.2003C7.463 24.1738 4.94759 22.1948 3.25523 19.5776L3.26448 19.5869Z" fill="#0A9100"/>
+                                          <path d="M16.0081 9.47898L15.0093 7.48145L14.0105 9.47898C13.8626 9.77491 13.5851 9.96911 13.2615 10.0154L11.116 10.339L12.6789 11.8834C12.91 12.1146 13.021 12.4383 12.9655 12.762L12.5956 14.926L14.5099 13.9272C14.8059 13.7792 15.1573 13.7792 15.4532 13.9272L17.3675 14.926L17.0253 12.762C16.9699 12.4383 17.0808 12.1146 17.312 11.8834L18.8749 10.339L16.7387 9.99686C16.4335 9.94137 16.1745 9.74717 16.0266 9.47898H16.0081Z" fill="#0A9100"/>
+                                          <path d="M27.0036 12.0037C27.0036 5.373 21.6306 0 14.9999 0C8.36924 0 3.00549 5.373 3.00549 12.0037C3.00549 18.6344 8.37849 24.0074 15.0092 24.0074C21.6399 24.0074 27.0129 18.6344 27.0129 12.0037H27.0036ZM21.7046 10.3668L19.0782 12.947L19.6978 16.5906C19.7718 16.9698 19.6146 17.3674 19.3002 17.5894C19.1337 17.7096 18.9303 17.7744 18.7176 17.7836C18.5511 17.7836 18.3939 17.7374 18.2459 17.6634L15.0092 15.934L11.7724 17.6449C11.4488 17.8021 11.0696 17.7744 10.7737 17.5709C10.4593 17.3397 10.302 16.9513 10.376 16.5721L10.9956 12.9285L8.31375 10.3668C7.9161 9.98767 7.90685 9.34957 8.28601 8.95191C8.44322 8.7947 8.64668 8.68372 8.85938 8.65598L12.4938 8.12885L14.1122 4.81813C14.3526 4.31874 14.9537 4.11529 15.4438 4.35573C15.6473 4.45746 15.8138 4.61467 15.9062 4.81813L17.5246 8.12885L21.159 8.65598C21.7046 8.73921 22.0838 9.2386 22.0006 9.79347C21.9728 10.0154 21.8618 10.2189 21.7046 10.3668Z" fill="#0A9100"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_56_374">
+                                            <rect width="30.0093" height="30" fill="white"/>
+                                          </clipPath>
+                                        </defs>
+                                      </svg>
                                     <P class="mb-0">High Level
                                         Of Business
                                         Ethics</P>
@@ -377,8 +448,16 @@
                                </div>
                                <div class="col-md-6">
                                 <div class="service_card ">
-                                    <img src="img/Flexible_Scheduling.svg" alt="Superior
-                                    Professionalism">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="22" viewBox="0 0 30 22" fill="none">
+                                        <g clip-path="url(#clip0_56_370)">
+                                          <path d="M30 2.73461V11.8144C30 11.8144 28.0537 12.1971 27.6547 12.246C27.2557 12.2949 26.0016 12.702 25.0896 11.8307C23.6889 10.4871 18.7052 5.53591 18.7052 5.53591C18.7052 5.53591 17.8502 4.69715 16.4658 5.4219C15.2036 6.08966 13.3225 7.06686 12.5407 7.44959C11.0586 8.23949 9.82899 6.98542 9.82899 6.03265C9.82899 5.29161 10.2932 4.79487 10.9528 4.42028C12.7362 3.33721 16.5065 1.21995 18.0782 0.389331C19.0309 -0.115555 19.715 -0.164415 21.0261 0.943077C22.6384 2.30301 24.0717 3.53265 24.0717 3.53265C24.0717 3.53265 24.5358 3.92353 25.285 3.76881C27.1173 3.37793 29.9919 2.73461 29.9919 2.73461H30ZM10.1792 18.1255C10.4235 17.5066 10.342 16.8144 9.87785 16.334C9.46254 15.9105 8.85179 15.7965 8.27362 15.9268C8.43648 15.3568 8.34691 14.746 7.9316 14.3144C7.51629 13.891 6.90554 13.777 6.32736 13.9072C6.49023 13.3372 6.40065 12.7265 5.9772 12.2949C5.32573 11.6271 4.19381 11.6515 3.44463 12.36C2.70358 13.0685 2.23127 14.3551 2.89088 15.1125C3.55049 15.8698 4.30782 15.4056 4.88599 15.2753C4.72313 15.8454 4.24267 16.3828 4.83713 17.132C5.4316 17.8812 6.25407 17.4252 6.83225 17.2949C6.66938 17.8649 6.21336 18.4512 6.78339 19.1434C7.36156 19.8437 8.29805 19.4691 8.92508 19.2737C8.68892 19.8926 8.16775 20.5603 8.82736 21.3014C9.48697 22.0506 11.0098 21.7085 11.7508 20.9919C12.4919 20.2835 12.5651 19.1597 11.9137 18.4838C11.4658 18.0196 10.7899 17.9138 10.171 18.1092L10.1792 18.1255ZM23.7622 13.4024C18.3795 8.01962 20.9121 10.5522 18.013 7.65317C18.013 7.65317 17.1417 6.78998 15.9935 7.28673C15.1873 7.63689 14.1531 8.11734 13.3713 8.48379C12.5163 8.93168 11.8974 9.07011 11.6042 9.07011C9.95114 9.06197 8.59935 7.72646 8.59935 6.07337C8.59935 4.99845 9.16938 4.06197 10.0163 3.53265C11.2134 2.70203 13.9658 1.24438 13.9658 1.24438C13.9658 1.24438 13.127 0.185748 11.2948 0.185748C9.46254 0.185748 5.62704 2.70203 5.62704 2.70203C5.62704 2.70203 4.53583 3.40236 2.9886 2.77532L0 1.72484V12.1157C0 12.1157 0.855049 12.36 1.62052 12.6776C1.79153 12.1809 2.07655 11.7248 2.45928 11.3502C3.72964 10.1369 5.83876 10.1287 7.00326 11.3177C7.35342 11.6841 7.59772 12.1157 7.71987 12.588C8.18404 12.7346 8.60749 12.9871 8.94951 13.3372C9.29967 13.6955 9.54397 14.1353 9.66612 14.6076C10.1303 14.7542 10.5537 15.0066 10.8958 15.3568C11.2785 15.7558 11.5391 16.2281 11.6531 16.7493C12.1417 16.8877 12.5814 17.1564 12.9316 17.5147C13.6238 18.2313 13.8762 19.2004 13.7215 20.1369C13.7296 20.1532 14.1531 20.6173 14.4137 20.8861C14.9267 21.3991 15.7655 21.3991 16.2785 20.8861C16.7915 20.373 16.7915 19.5343 16.2785 19.0213C16.2622 19.005 14.43 17.0831 14.5765 16.9366C14.7231 16.79 17.0603 19.2167 17.101 19.2656C17.614 19.7786 18.4528 19.7786 18.9658 19.2656C19.4788 18.7525 19.4788 17.9138 18.9658 17.4007C18.9414 17.3763 18.8355 17.2786 18.7948 17.2379C18.7948 17.2379 16.4821 15.1776 16.6531 14.9985C16.8322 14.8193 19.7068 17.5066 19.715 17.5066C20.228 17.9708 21.0261 17.9708 21.5228 17.474C22.0033 16.9936 22.0195 16.2281 21.5879 15.7069C21.5798 15.6825 19.3974 13.4024 19.5684 13.2314C19.7394 13.0603 21.8974 15.2835 21.9055 15.2835C22.4186 15.7965 23.2573 15.7965 23.7704 15.2835C24.2834 14.7704 24.2834 13.9317 23.7704 13.4186C23.7704 13.4186 23.7541 13.4105 23.7459 13.4024H23.7622Z" fill="#0A9100"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_56_370">
+                                            <rect width="30" height="21.6938" fill="white" transform="translate(0 0.0473633)"/>
+                                          </clipPath>
+                                        </defs>
+                                      </svg>
                                     <P class="mb-0">Superior
                                         Professionalism</P>
                                 </div>
@@ -397,8 +476,8 @@
             <div class="container-fluid p-0">
                 <div class="row g-0">
                     <div class="col-md-6 ">
-                        <div class="service_content ">
-                            <div class=" ">
+                        <div class=" container ">
+                            <div class=" service_content">
                                 <h2 class="service_title">
                                     Cleaning <span class="light_blue">Services</span>
                                 </h2>
@@ -439,18 +518,33 @@
                 </div>
             </div>
         </section>
+        <section class="section_pt client_bg">
+            <div class="container-fluid p-0">
+                <h2 class="common_head text-white">What Our Client Says</h2>
+                <div class="owl-carousel client_slider">
+                    <div class="item"><img src="img/gallery/gallery-1.png" alt="gallery 1"></div>
+                    <div class="item"><img src="img/gallery/gallery-2.png" alt="gallery 2"></div>
+                    <div class="item"><img src="img/gallery/gallery-3.png" alt="gallery 3"></div>
+                    <div class="item"><img src="img/gallery/gallery-4.png" alt="gallery 4"></div>
+                    <div class="item"><img src="img/gallery/gallery-5.png" alt="gallery 4"></div>
+                    <div class="item"><img src="img/gallery/gallery-6.png" alt="gallery 2"></div>
+                    <div class="item"><img src="img/gallery/gallery-7.png" alt="gallery 3"></div>
+                    <!-- <div class="item"><img src="img/gallery/gallery-8.png" alt="gallery 8"></div> -->
+                </div>
+            </div>
+        </section>
         <section class="section_pt ">
-            <div class="container">
+            <div class="container-fluid p-0">
                 <h2 class="common_head">Our <span class="Primary_red">Gallery</span></h2>
                 <div class="owl-carousel gallery_slider">
                     <div class="item"><img src="img/gallery/gallery-1.png" alt="gallery 1"></div>
                     <div class="item"><img src="img/gallery/gallery-2.png" alt="gallery 2"></div>
                     <div class="item"><img src="img/gallery/gallery-3.png" alt="gallery 3"></div>
                     <div class="item"><img src="img/gallery/gallery-4.png" alt="gallery 4"></div>
-                    <div class="item"><img src="img/gallery/gallery-1.png" alt="gallery 4"></div>
-                    <div class="item"><img src="img/gallery/gallery-2.png" alt="gallery 2"></div>
-                    <div class="item"><img src="img/gallery/gallery-3.png" alt="gallery 3"></div>
-                    <div class="item"><img src="img/gallery/gallery-4.png" alt="gallery 4"></div>
+                    <div class="item"><img src="img/gallery/gallery-5.png" alt="gallery 4"></div>
+                    <div class="item"><img src="img/gallery/gallery-6.png" alt="gallery 2"></div>
+                    <div class="item"><img src="img/gallery/gallery-7.png" alt="gallery 3"></div>
+                    <!-- <div class="item"><img src="img/gallery/gallery-8.png" alt="g"></div> -->
                 </div>
             </div>
         </section>
@@ -458,26 +552,26 @@
             <div class="container">
                 <div class="gradient_bg">
                     <div class="row ">
-                        <div class="col-md-6 offset-1">
+                        <div class="col-md-6 offset-md-1">
                             <div class="pt_100 ">
                                 <h2 class="mb-5">Let’s push the boundaries of growth and success – Together.</h2>
                                 <a href="#" class="btn btn_white">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                         <div class="col-md-5 d-flex justify-content-center">
-                            <img src="./img/img-1.png" alt="img-1" class="success_img">
+                            <img src="./img/img-1.png" alt="img-1" class="success_img img-fluid">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <footer class="text-white text-center section_mt text-lg-start">
+        <footer class="text-white  section_mt text-lg-start">
             <!-- Grid container -->
             <div class="container pb-4">
                 <div class="footer_body">
                     <!--Grid row-->
                     <div class="row mt-4">
-                        <div class="col-md-3">
+                        <div class="col-md-4 col-lg-3 mb-4 mb-md-0">
                             <div class="">
                                 <img src="img/radhe_Security_logo.svg" alt="radhe_Security_logo">
                                 <h3 class="ft_title mt-5">Follow US on</h3>
@@ -505,33 +599,33 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4 col-lg-3 mb-4 mb-md-0">
                             <h3 class="ft_title">Services</h3>
                             <ul class="ft_item">
                                 <li class="ft_link">
                                     <a href="" class="ft_a">Security Guard</a>
                                 </li>
                                 <li class="ft_link">
-                                    <a href="" class="ft_a">
+                                    <a href="food-service.html" class="ft_a">
                                         Food Catering Services
                                     </a>
                                 </li>
                                 <li class="ft_link">
-                                    <a href="" class="ft_a">
+                                    <a href="cleaning-service.html" class="ft_a">
                                         Cleaning Services
                                     </a>
                                 </li>
                             </ul>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-4 col-lg-3 mb-4 mb-md-0">
                             <h3 class="ft_title">Important Link</h3>
                             <ul class="ft_item">
                                 <li class="ft_link">
-                                    <a href="" class="ft_a">Home</a>
+                                    <a href="index.html" class="ft_a">Home</a>
                                 </li>
                                 <li class="ft_link">
-                                    <a href="" class="ft_a">
+                                    <a href="aboutus.html" class="ft_a">
                                         About
                                     </a>
                                 </li>
@@ -546,13 +640,13 @@
                                     </a>
                                 </li>
                                 <li class="ft_link">
-                                    <a href="" class="ft_a">
+                                    <a href="contact-us.html" class="ft_a">
                                         Contact Us
                                     </a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-12 col-lg-3">
                             <ul class="contet_ft">
                                 <li class="ft_link">
                                     <div>
@@ -565,7 +659,7 @@
                                 </li>
                                 <li class="ft_link">
                                     <div>
-                                        <img src="img/phone_ft.svg" alt="Email">
+                                        <img src="img/email_ft.svg" alt="Email">
                                     </div>
                                     <div>
                                         <p class="ft_p mb-0">Email</p>
@@ -574,7 +668,7 @@
                                 </li>
                                 <li class="ft_link">
                                     <div>
-                                        <img src="img/phone_ft.svg" alt="Locations">
+                                        <img src="img/locations_ft.svg" alt="Locations">
                                     </div>
                                     <div>
                                         <p class="ft_p mb-0">Office Locations</p>
