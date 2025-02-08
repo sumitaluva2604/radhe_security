@@ -81,6 +81,29 @@ $(document).ready(function(){
   });
   
   
+  
+  $(document).ready(function(){
+    $(".client_slider").owlCarousel({
+      loop: true,             // Enable infinite scrolling
+      margin: 20,             // Margin between items
+      nav: false,              // Show navigation arrows
+      dots: true,             // Show navigation dots
+      autoplay: true,         // Enable autoplay
+      autoplayTimeout: 3000,  // Time between slides (3 seconds)
+      autoplayHoverPause: true, // Pause autoplay on hover
+      responsive: {
+        0: {
+          items: 1            // 1 card per slide for small screens
+        },
+        768: {
+          items: 2            // 2 cards per slide for medium screens
+        },
+        1200: {
+          items: 3            // 3 cards per slide for large screens
+        }
+      }
+    });
+  });
 
     // *************counter js**************
 
@@ -104,3 +127,44 @@ let stop =setInterval(function(){
 },50)
 
 })
+
+
+// typewrite 
+var TxtType = function(e, t, s) {
+  this.toRotate = t,
+  this.el = e,
+  this.loopNum = 0,
+  this.period = parseInt(s, 10) || 2e3,
+  this.txt = "",
+  this.tick(),
+  this.isDeleting = !1
+};
+TxtType.prototype.tick = function() {
+  var e = this.loopNum % this.toRotate.length
+    , t = this.toRotate[e];
+  this.isDeleting ? this.txt = t.substring(0, this.txt.length - 1) : this.txt = t.substring(0, this.txt.length + 1),
+  this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+  var s = this
+    , i = 200 - 100 * Math.random();
+  this.isDeleting && (i /= 2),
+  this.isDeleting || this.txt !== t ? this.isDeleting && "" === this.txt && (this.isDeleting = !1,
+  this.loopNum++,
+  i = 500) : (i = this.period,
+  this.isDeleting = !0),
+  setTimeout(function() {
+      s.tick()
+  }, i)
+}
+,
+window.onload = function() {
+  for (var e = document.getElementsByClassName("typewrite"), t = 0; t < e.length; t++) {
+      var s = e[t].getAttribute("data-type")
+        , i = e[t].getAttribute("data-period");
+      s && new TxtType(e[t],JSON.parse(s),i)
+  }
+  var o = document.createElement("style");
+  o.type = "text/css",
+  o.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}",
+  document.body.appendChild(o)
+}
+;
